@@ -1,0 +1,19 @@
+﻿  Button.cpp
+  game.cpp
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(3): warning C4244: 'initializing': conversion from 'double' to 'sf::Int32', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(19): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(20): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(21): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\game.cpp(46): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  grid.cpp
+c:\users\peter\desktop\lab6.peterdaly\grid.cpp(11): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\grid.cpp(112): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\grid.cpp(111): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+  tile.cpp
+c:\users\peter\desktop\lab6.peterdaly\tile.cpp(4): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\peter\desktop\lab6.peterdaly\tile.cpp(15): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Generating Code...
+  LINK : C:\Users\peter\Desktop\Lab6.PeterDaly\Debug\Lab6.PeterDaly.exe not found or not built by the last incremental link; performing full link
+  Lab6.PeterDaly.vcxproj -> C:\Users\peter\Desktop\Lab6.PeterDaly\Debug\Lab6.PeterDaly.exe
