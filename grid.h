@@ -35,9 +35,9 @@ public:
 	sf::Font m_font;
 
 private:
-	int m_width = 50;
-	int m_height = 50;
-	Tile *m_grid[50][50];
+	int m_width = 30;
+	int m_height = 30;
+	Tile *m_grid[30][30];
 
 	sf::Keyboard m_keys;
 	int m_lastKey = 0;

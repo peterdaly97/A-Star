@@ -134,7 +134,7 @@ void Grid::setUpNode(int x, int y, int xAdd, int yAdd, int cost, float angle) {
 
 void Grid::heatMap(Tile * tile, int x, int y, int cost) {
 
-	if (x < 49 && !m_grid[x + 1][y]->m_start && !m_grid[x + 1][y]->m_obstacle
+	if (x < 29 && !m_grid[x + 1][y]->m_start && !m_grid[x + 1][y]->m_obstacle
 		&& !m_grid[x + 1][y]->m_marked) {
 		
 		setUpNode(x, y, 1, 0, cost, 0.0);
@@ -144,7 +144,7 @@ void Grid::heatMap(Tile * tile, int x, int y, int cost) {
 
 		setUpNode(x, y, -1, 0, cost, 180.0);
 	}
-	if (y < 49 && !m_grid[x][y + 1]->m_start && !m_grid[x][y + 1]->m_obstacle
+	if (y < 29 && !m_grid[x][y + 1]->m_start && !m_grid[x][y + 1]->m_obstacle
 		&& !m_grid[x][y + 1]->m_marked) {
 
 		setUpNode(x, y, 0, 1, cost, 90.0);
@@ -160,17 +160,17 @@ void Grid::heatMap(Tile * tile, int x, int y, int cost) {
 
 		setUpNode(x, y, -1, -1, cost, 225.0);
 	}
-	if (y < 49 && x > 0 && !m_grid[x - 1][y + 1]->m_start && !m_grid[x - 1][y + 1]->m_obstacle
+	if (y < 29 && x > 0 && !m_grid[x - 1][y + 1]->m_start && !m_grid[x - 1][y + 1]->m_obstacle
 		&& !m_grid[x - 1][y + 1]->m_marked) {
 
 		setUpNode(x, y, -1, 1, cost, 135.0);
 	}
-	if (y > 0 && x < 49 && !m_grid[x + 1][y - 1]->m_start && !m_grid[x + 1][y - 1]->m_obstacle
+	if (y > 0 && x < 29 && !m_grid[x + 1][y - 1]->m_start && !m_grid[x + 1][y - 1]->m_obstacle
 		&& !m_grid[x + 1][y - 1]->m_marked) {
 
 		setUpNode(x, y, 1, -1, cost, 315.0);
 	}
-	if (y < 49 && x < 49 && !m_grid[x + 1][y + 1]->m_start && !m_grid[x + 1][y + 1]->m_obstacle
+	if (y < 29 && x < 29 && !m_grid[x + 1][y + 1]->m_start && !m_grid[x + 1][y + 1]->m_obstacle
 		&& !m_grid[x + 1][y + 1]->m_marked) {
 
 		setUpNode(x, y, 1, 1, cost, 45.0);

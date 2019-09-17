@@ -3,15 +3,15 @@
 static sf::Int32 MS_PER_UPDATE = 10.0;
 
 
-Game::Game() : m_window(sf::VideoMode(1800, 1500), "AI") {
+Game::Game() : m_window(sf::VideoMode(1200, 900), "AI") {
 
 	m_window.setFramerateLimit(60);
 	std::string clearText = "Clear Grid";
-	m_buttonClear = new Button(&clearText, new sf::Vector2f(1600, 100), &grid.m_font);
+	m_buttonClear = new Button(&clearText, new sf::Vector2f(1000, 100), &grid.m_font);
 	std::string costText = "Toggle Cost";
-	m_buttonCost = new Button(&costText, new sf::Vector2f(1600, 300), &grid.m_font);
+	m_buttonCost = new Button(&costText, new sf::Vector2f(1000, 300), &grid.m_font);
 	std::string vectorText = "Toggle Vector";
-	m_buttonVector = new Button(&vectorText, new sf::Vector2f(1600, 500), &grid.m_font);
+	m_buttonVector = new Button(&vectorText, new sf::Vector2f(1000, 500), &grid.m_font);
 
 	lmbText.setFont(grid.m_font);
 	rmbText.setFont(grid.m_font);
@@ -45,7 +45,7 @@ void Game::run() {
 		mousePos.x = m_mouse.getPosition(m_window).x / 30;
 		mousePos.y = m_mouse.getPosition(m_window).y / 30;
 		if (m_mouse.isButtonPressed(sf::Mouse::Left)) {
-			if (mousePos.x < 50)
+			if (mousePos.x < 30)
 				grid.selectLeft(mousePos);
 			if (m_buttonCost->isInside((sf::Vector2f)m_mouse.getPosition(m_window)))
 				grid.toggleCost();
@@ -55,11 +55,11 @@ void Game::run() {
 				grid.clearGrid();
 		}
 		if (m_mouse.isButtonPressed(sf::Mouse::Right)) {
-			if (mousePos.x < 50)
+			if (mousePos.x < 30)
 				grid.selectRight(mousePos);
 		}
 		if (m_mouse.isButtonPressed(sf::Mouse::Middle)) {
-			if (mousePos.x < 50)
+			if (mousePos.x < 30)
 				grid.selectMiddle(mousePos);
 		}
 
